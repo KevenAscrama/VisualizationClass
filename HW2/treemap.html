@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Visulization_HW2_Treemap_周子健_3170102304</title>
+	<!-- CSS Files -->
+	<!-- <link type="text/css" href="css/base.css" rel="stylesheet" /> -->
+	<link type="text/css" href="css/style.css" rel="stylesheet" />
+
+
+</head>
+
+<body onload="init();">
+		<!-- DOMTreeMap Library File -->
+	<script language="javascript" type="text/javascript" src="./main.js"></script>
+	<script language="javascript" type="text/javascript" src="css/messy stuff.js"></script>
+	<!-- Example File -->
+	<!-- <script language="javascript" type="text/javascript" src="../treemap.js"></script> -->
+	<div id="container">
+		<div id="left-container">
+<!-- 			<div class="text">
+				<h4>
+					Change Parameters  
+				</h4>            
+			</div> -->
+			<p style="text-align: center;color: yellow;margin: 5px;font:bold;font-size: 15px;">
+				Treemap of Phone Brands' Market Share
+			</p>
+			<p style="margin: 5px;">
+				Description: <br>This tree map shows the brands' market share. One brand contains many versions of their phones. The larger the amount it gets, more bigger the rectangular will be. <br>Meanwhile, the different color means the different year the phone was released. The newer it is, the bluer it will be. (Tip: The excat data is all made up.) Left-click can zoom in and right-click can zoom out. 
+			</p>
+			<p id="output" style="margin: 5px;color: yellow">
+					Hello! By clicking the following buttons, you are able to change the parameters of brands and versions of a phone if you want.
+			</p>
+			<button class="confrim" style="display: block;text-align: center;float: left;transition: 5s;" onclick="input_brand()">Change Brand's sold amount</button>
+			<button class="confrim" style="display: block;text-align: center;float: left;" onclick="input_version() ">Change a specific version of phone's sold amount</button>             
+		</div>
+
+		<div id="center-container">
+		    <div id="infovis"></div>    
+		</div>
+
+		<!-- <div id="right-container"></div> -->
+		<div id="log"></div>
+	</div>
+</body>
+</html>
